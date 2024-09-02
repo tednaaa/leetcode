@@ -1,5 +1,7 @@
 use std::collections::HashMap;
 
+#[must_use]
+#[allow(clippy::needless_pass_by_value)]
 pub fn is_anagram(s: String, t: String) -> bool {
 	if s.len() != t.len() {
 		return false;
@@ -31,6 +33,6 @@ mod tests {
 
 	#[test]
 	fn different_length() {
-		assert!(!is_anagram(String::from("Hello"), String::from("helllllo")))
+		assert!(!is_anagram(String::from("Hello"), String::from("helllllo")));
 	}
 }
