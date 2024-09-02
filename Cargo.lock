@@ -5,3 +5,7 @@ version = 3
 [[package]]
 name = "contains-duplicate"
 version = "0.1.0"
+
+[[package]]
+name = "valid_anagram"
+version = "0.1.0"
