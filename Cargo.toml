@@ -1,0 +1,7 @@
+[workspace.lints.clippy]
+pedantic = "warn"
+nursery = "warn"
+
+[workspace]
+members = ["crates/contains_duplicate"]
+resolver = "2"
