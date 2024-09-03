@@ -1,6 +1,5 @@
 use std::collections::HashMap;
 
-#[must_use]
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 	let mut map = HashMap::new();
 
@@ -8,7 +7,6 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 		let diff = target - number;
 
 		if let Some(&j) = map.get(&diff) {
-			#[allow(clippy::cast_possible_truncation, clippy::cast_possible_wrap)]
 			return vec![i as i32, j as i32];
 		}
 

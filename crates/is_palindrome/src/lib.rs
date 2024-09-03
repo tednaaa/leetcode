@@ -1,4 +1,3 @@
-#[must_use]
 pub fn is_palindrome(s: String) -> bool {
 	if s.trim().is_empty() {
 		return true;
