@@ -1,10 +1,12 @@
 [workspace.lints.clippy]
-pedantic = "warn"
-nursery = "warn"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+needless_pass_by_value = "allow"
 
 [workspace]
 members = [
 	"crates/contains_duplicate",
+	"crates/is_palindrome",
 	"crates/two_sum",
 	"crates/valid_anagram",
 ]
