@@ -7,7 +7,7 @@ pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
 		let diff = target - number;
 
 		if let Some(&j) = map.get(&diff) {
-			return vec![i as i32, j as i32];
+			return vec![j as i32, i as i32];
 		}
 
 		map.insert(number, i);
