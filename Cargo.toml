@@ -3,5 +3,9 @@ pedantic = "warn"
 nursery = "warn"
 
 [workspace]
-members = ["crates/contains_duplicate", "crates/valid_anagram"]
+members = [
+	"crates/contains_duplicate",
+	"crates/two_sum",
+	"crates/valid_anagram",
+]
 resolver = "2"
